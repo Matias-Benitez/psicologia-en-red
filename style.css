@@ -17,7 +17,11 @@
     --green: #09BE4B;
     --mainFont: 'Poppins', sans-serif;
  }
+html {
+  font-size: 15px;
+}
 
+ 
 body{
     background-image: url(./img/background.png);
     font-family: var(--mainFont);
@@ -63,12 +67,27 @@ html, body {
 }
 
 
+body {
+  padding-top: 15px !important;
+}
+@media (min-width: 992px) {
+  .home-col-2 img {
+    max-width: 80%;
+  }
+}
+
 
 /* ---------------Home--------------- */
 
 
 .home-col-1{
     margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.home-col-2{
+
+    margin-left: 4rem;
 }
 .home-col-1 h1{
     font-weight: 600;
@@ -121,6 +140,12 @@ html, body {
         display: none;
     }
 }
+
+.home-col-2 img {
+  max-width: 120%;
+  height: auto;
+}
+
 /* ---------------Porque Nosotros--------------- */
 #nosotros{
     padding: 3rem 0;
@@ -894,14 +919,3 @@ body {
 }
 
 /* QUITAR ESPACIO ARRIBA DEL HERO - FORMA DIRECTA */
-#home {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-#home * {
-  margin-top: 15px !important;
-}
-body {
-  padding-top: 0 !important;
-}
