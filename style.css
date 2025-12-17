@@ -918,4 +918,42 @@ body {
   }
 }
 
-/* QUITAR ESPACIO ARRIBA DEL HERO - FORMA DIRECTA */
+/* ===============================
+   HERO MOBILE – AJUSTE FINAL
+================================ */
+
+@media (max-width: 576px) {
+
+  /* Logo centrado */
+  .hero-logo-mobile {
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+
+  /* Contenedor del texto */
+  .home-col-1 {
+    text-align: left;
+  }
+
+  /* Ajuste fino de títulos y párrafos */
+  .home-col-1 h1,
+  .home-col-1 h2,
+  .home-col-1 p {
+    text-align: left;
+  }
+
+@media (max-width: 576px) {
+
+  .home-col-1 a.btn-vg {
+    display: block;
+    margin: 1.5rem auto;
+    text-align: center;
+
+}
+@media (max-width: 576px) {
+  .home-col-1,
+  .home-col-2 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
