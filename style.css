@@ -892,3 +892,16 @@ body {
     margin: 1.5rem auto;
   }
 }
+
+/* QUITAR ESPACIO ARRIBA DEL HERO - FORMA DIRECTA */
+#home {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+#home * {
+  margin-top: 15px !important;
+}
+body {
+  padding-top: 0 !important;
+}
