@@ -846,10 +846,10 @@ footer div span p{
   /* LOGO grande y responsive */
   .hero-logo-mobile {
     display: block;
-    width: 80%;
+    width: 70%;
     max-width: 320px;
     height: auto;
-    margin: 0 auto 3rem;
+    padding-bottom: 20px;
   }
 
   /* OCULTA textos duplicados */
