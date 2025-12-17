@@ -1,0 +1,876 @@
+*{
+    margin: 0;
+ }
+ :root {
+    --bluePrimary: #043353;
+    --blue600: #12466A;
+    --blue400: #436583;
+    --redPrimary: #C375E3;
+    --red400: #C375E3;
+    --red200: #EC9FA2;
+    --black: #23282A;
+    --gray: #64696C;
+    --whitePrimary: #FFF;
+    --whiteSecondary: #F5F4F1;
+    --cream: #62cff4;
+    --pink: #F5B8D2;
+    --green: #09BE4B;
+    --mainFont: 'Poppins', sans-serif;
+ }
+
+body{
+    background-image: url(./img/background.png);
+    font-family: var(--mainFont);
+}
+
+section {
+ margin-bottom: 100px;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* ---------------Header--------------- */
+
+#header a{
+    color: var(--bluePrimary);
+    font-size: 1.2rem;
+    font-family: var(--mainFont);
+    margin: 0 1rem;
+    border-radius: 2rem;
+}
+#header a:hover{
+    color: var(--red400);
+    font-weight: 600;
+}
+#header a span{
+    color: var(--whitePrimary);
+    padding: 1rem;
+}
+
+.navbar {
+    position: fixed;       /* Fija el navbar en la pantalla */
+    top: 0;                /* Pegado arriba */
+    left: 0;
+    width: 100%;           /* Que ocupe todo el ancho */
+    background: #fff;      /* Fondo (podés cambiarlo) */
+    z-index: 999;          /* Evita que quede tapado */
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave opcional */
+}
+
+
+
+/* ---------------Home--------------- */
+
+
+.home-col-1{
+    margin-top: 3rem;
+}
+.home-col-1 h1{
+    font-weight: 600;
+    color: var(--bluePrimary);
+}
+.home-col-1 h3{
+    font-weight: 200;
+    color: var(--blue400);
+}
+.home-col-1 div{
+    margin: 3rem auto;
+    font-size: 1.3rem;
+}
+.btn-vg{
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    background-color: var(--red400);
+    border: 0;
+    color: var(--whitePrimary);
+    text-decoration: none;
+}
+.btn-vg:hover{
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    background-color: var(--redPrimary);
+    border: 0;
+    color: var(--whitePrimary);
+    font-weight: 600;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.btn-admision{
+ display: inline-block;          /* clave */
+    padding: 1rem 6rem;             /* controla el tamaño */
+    background-color: #c084e8;      /* tu violeta */
+    color: #fff;
+    border-radius: 999px;           /* pill button */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 650px){
+    .home-col-1 div img{
+        display: none;
+    }
+    .home-col-2 img{
+        display: none;
+    }
+    .btn-vg{
+        padding: 0.5rem 3rem;
+        text-align: center;
+    }
+    .btn-vg:hover{
+        padding: 0.5rem 3rem;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .home-col-1 div img{
+        margin-left: 1rem;
+    }
+    .home-col-1{
+        width: 50rem;
+    }
+    .home-col-2 img{
+        display: none;
+    }
+}
+/* ---------------Porque Nosotros--------------- */
+#nosotros{
+    padding: 3rem 0;
+}
+#nosotros h3{
+    padding: 3rem 0;
+    color: var(--redPrimary);
+}
+.subtitle{
+    font-weight: 600;
+    padding: 1.5rem 0;
+    font-size: 2.4rem;
+    color: var(--bluePrimary);
+        text-align: center;
+}
+.nosotros-col-2 p{
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 650px){
+    .container h3{
+        text-align: center;
+    }
+    .nosotros-col-1{
+        text-align: center;
+    }
+    .nosotros-col-2 h2{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .nosotros-col-1 img{
+        margin-top: 5rem;
+    }
+}
+/* ---------------Corrientes--------------- */
+#aprendemos{
+    margin-top: 5rem;
+    padding: 3rem 0;
+    text-align: center;
+    background-color: var(--whitePrimary);
+}
+.aprendemos div img{
+    width: 80%;
+padding: 1rem 0;
+}
+.aprendemos div h5{
+    color: var(--bluePrimary);
+}
+.aprendemos div p{
+    color: var(--gray);
+}
+
+
+/* ---------------Espacio inclusivo--------------- */
+.espacio {
+    margin-top: 8rem;
+}
+
+.espacio p{
+    color: var(--gray);
+    font-size: 1.2rem;
+}
+.espacio-col-1{
+    margin-top: 2%;
+}
+@media only screen and (max-width: 650px){
+    #espacio{
+        margin-top: 15%;
+        text-align: center;
+    }
+    .espacio-col-2 img{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    #espacio{
+        margin-top: 15%;
+        text-align: center;
+    }
+    .espacio-col-2 img{
+        width: 90%;
+    }
+}
+/* ---------------Nuestros Cursos--------------- */
+#cursos{
+    text-align: center;
+    padding: 8rem 0;
+    
+}
+.card{
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream);
+    border: none;
+    border-radius: 1rem;
+    padding-bottom: 3rem;
+}
+
+.card p{
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin: 0.5 1rem;
+    
+}
+.card-body h5{
+    color: var(--bluePrimary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .card{
+        margin: auto;
+    }
+}
+/* ---------------Objetivo--------------- */
+#objetivo{
+    padding: 6rem 0;
+}
+#objetivo h4{
+    color: var(--red400);
+    font-weight: 600;
+    padding: 1rem 0;
+}
+#objetivo h2{
+    color: var(--bluePrimary);
+    font-weight: 600;
+    padding: 1rem 0;
+}
+@media only screen and (max-width: 650px){
+    #objetivo{
+        padding: 4rem 0;
+    }
+}
+/* ---------------imagenes--------------- */
+#imagenes{
+    text-align: center;
+    padding: 1rem 0;
+}
+#imagenes h5{
+    color: var(--gray);
+    padding: 4rem 0;
+    font-weight: 600;
+}
+.imagenes h4{
+    color: var(--bluePrimary);
+    font-weight: 600;
+    padding: 1rem 0;
+}
+.imagenes p{
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+@media only screen and (max-width: 650px){
+    .imagenes div{
+        margin: 2rem 0;
+    }
+}
+
+/* ---------------Inscribite--------------- */
+#inscribite{
+    text-align: center;
+    padding: 6rem 0;
+    margin-bottom: 3rem;
+}
+#inscribite h5{
+    color: var(--gray);
+    margin-bottom: 3rem;
+}
+#inscribite a{
+    padding: 0.7rem 12rem
+}
+#inscribite a:hover{
+    padding: 0.7rem 12rem;
+    border-radius: 2rem;
+    background-color: var(--redPrimary);
+    border: 0;
+    color: var(--whitePrimary);
+    font-weight: 600;
+}
+@media only screen and (max-width: 650px){
+    #inscribite{
+        margin-bottom: 5rem;
+    }
+    #inscribite a{
+        padding: 0.7rem 8rem
+    }
+    #inscribite a:hover{
+        padding: 0.7rem 8rem;
+    }
+}
+/* ---------------Footer--------------- */
+footer{
+    padding: 3rem 0;
+    background-color: var(--bluePrimary);
+}
+footer p{
+    color: var(--whitePrimary);
+}
+footer div span p{
+    text-align: center;
+    margin-top: 4rem;
+}
+.links{
+    display: flex;
+    align-items: center;
+}
+.links a{
+    display: inline-block;
+    text-decoration: none;
+    width: 3rem;
+    line-height: 3rem;
+    height: 3rem;
+    color: var(--blue600);
+    margin: 1rem;
+    background-color: var(--whitePrimary);
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+}
+.incribite-col-1{
+    padding-left: 10rem;
+}
+.incribite-col-3{
+    padding-left: 10rem;
+}
+@media only screen and (max-width: 650px){
+    .links{
+        margin: 2rem 0;
+    }
+    .links a{
+        width: 2.4rem;
+        line-height: 2.4rem;
+        height: 2.4rem;
+    }
+    .incribite-col-3{
+        text-align: center;
+        padding-left: 0rem;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .links{
+        margin: 2rem 0;
+    }
+    .links a{
+        width: 1.9rem;
+        line-height: 1.9rem;
+        height: 1.9rem;
+    }
+    .incribite-col-3{
+        text-align: start;
+        padding-left: 2rem;
+    }
+}
+/* ---------------Logo Wsp--------------- */
+.whatsapp {
+    position:fixed;
+    width:4rem;
+    height:4rem;
+    bottom:3rem;
+    right:3rem;
+    background-color: var(--green);
+    color:var(--whitePrimary);
+    border-radius:50%;
+    text-align:center;
+    font-size:2.2rem;
+    z-index:100;
+ }
+ .whatsapp-icon {
+    margin-top:0.8rem;
+ }
+ /* ---------------Cursos--------------- */
+#cursos{
+    padding: 2rem 0;
+}
+#cursos h1{
+    color: var(--bluePrimary);
+    font-weight: 600;
+    padding: 2rem 0;
+}
+#cursos h4{
+    background-color: var(--bluePrimary);
+    color: var(--whitePrimary);
+    padding: 1.5rem 3rem;
+    text-align: start;
+}
+.botones{
+    padding: 2rem 0;
+}
+.botones a{
+    padding: 0.8rem 6rem;
+    background-color: var(--bluePrimary);
+    border-radius: 1rem;
+    color: var(--whitePrimary);
+    text-decoration: none; 
+}
+.botones a:hover{
+    padding: 0.8rem 6rem;
+    background-color: var(--whitePrimary);
+    border-radius: 1rem;
+    color: var(--bluePrimary);
+    text-decoration: none; 
+    border: solid 0.2rem var(--bluePrimary);
+    font-weight: 600;
+}
+@media only screen and (max-width: 650px){
+    .botones div{
+        margin: 1.2rem 0;
+    }
+    .botones a{
+        padding: 0.8rem 6rem;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .botones a{
+        padding: 0.8rem 4rem;
+    }
+    .botones a:hover{
+        padding: 0.8rem 4rem;
+    }
+}
+ /* ---------------Personalizadas--------------- */
+#personalizadas{
+    padding: 3rem 0;
+}
+#personalizadas .container{
+    background-color: var(--whiteSecondary);
+    padding-right: 15rem;
+    padding-left: 5rem;
+    border-radius: 5rem;
+}
+.personal-col-1{
+    padding: 2rem 0;
+}
+.personal-col-1 p{
+    color: var(--gray);
+}
+.personal-col-1 div h3{
+    padding: 2rem 0;
+    color: var(--bluePrimary);
+    font-weight: 600;
+}
+.personal-col-1 div h2{
+    padding: 2rem 0;
+    color: var(--blue400);
+    font-weight: 800;
+}
+.personal-col-1 h5, li{
+    color: var(--gray);
+}
+.personal-col-2 img{
+    margin-top: 30%;
+}
+@media only screen and (max-width: 650px){
+    #personalizadas .container{
+        background-color: var(--whiteSecondary);
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-radius: 0rem;
+    }
+    .personal-col-2 img{
+        display: none;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .personal-col-2 img{
+        margin-top: 65%;
+        width: 200%;
+    }
+}
+/* ---------------Grupal--------------- */
+ #grupales{
+    padding: 3rem 0;
+}
+ #grupales .container{
+    background-color: var(--whiteSecondary);
+    padding-right: 15rem;
+    padding-left: 5rem;
+    border-radius: 5rem;
+}
+.grupal-col-1{
+    padding: 2rem 0;
+}
+.grupal-col-1 p{
+    color: var(--gray);
+}
+.grupal-col-1 div h3{
+    padding: 2rem 0;
+    color: var(--bluePrimary);
+    font-weight: 600;
+}
+.grupal-col-1 div h2{
+    padding: 2rem 0;
+    color: var(--blue400);
+    font-weight: 800;
+}
+.grupal-col-1 h5, li{
+    color: var(--gray);
+}
+.grupal-col-2 img{
+    margin-top: 30%;
+}
+@media only screen and (max-width: 650px){
+    #grupales .container{
+        background-color: var(--whiteSecondary);
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-radius: 0rem;
+    }
+    .grupal-col-2 img{
+        display: none;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .grupal-col-2 img{
+        margin-top: 65%;
+        width: 200%;
+    }
+}
+/* ---------------Speaking--------------- */
+#speaking{
+    padding: 3rem 0;
+}
+#speaking .container{
+    background-color: var(--whiteSecondary);
+    padding-right: 15rem;
+    padding-left: 5rem;
+    border-radius: 5rem;
+}
+.speaking-col-1{
+    padding: 2rem 0;
+}
+.speaking-col-1 p{
+    color: var(--gray);
+}
+.speaking-col-1 div h3{
+    padding: 2rem 0;
+    color: var(--bluePrimary);
+    font-weight: 600;
+}
+.speaking-col-1 div h2{
+    padding: 2rem 0;
+    color: var(--blue400);
+    font-weight: 800;
+}
+.speaking-col-1 h5, li{
+    color: var(--gray);
+}
+.speaking-col-2 img{
+    margin-top: 30%;
+}
+@media only screen and (max-width: 650px){
+    #speaking .container{
+        background-color: var(--whiteSecondary);
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-radius: 0rem;
+    }
+    .speaking-col-2 img{
+        display: none;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 1024px){
+    .speaking-col-2 img{
+        margin-top: 65%;
+        width: 200%;
+    }
+}
+/* ---------------En construcción--------------- */
+.construccion{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.construccion-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.construccion-b a{
+    background-color: var(--redPrimary);
+    padding: 0.7rem 8rem;
+}
+.construccion-b a:hover{
+    background-color: var(--red400);
+    padding: 0.7rem 8rem;
+}
+@media only screen and (max-width: 650px){
+    .construccion img{
+        width: 150%;
+        padding: 0rem;
+    }
+    .construccion-b a{
+        background-color: var(--redPrimary);
+        padding: 0.5rem 5rem;
+    }
+    .construccion-b a:hover{
+        background-color: var(--red400);
+        padding: 0.5rem 5rem;
+    }
+}
+
+/* #carouselTratamientos {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+} */
+
+/* TRANSICIÓN MÁS SUAVE */
+.carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
+/* CARD */
+.carousel-card {
+  text-align: center;
+}
+
+/* CONTENEDOR IMAGEN */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #f5f5f5;
+}
+
+/* IMAGEN */
+.img-wrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 12px;
+  transition: transform 0.5s ease;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* BOTÓN OVERLAY */
+.btn-overlay {
+  background: #fff;
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HOVER */
+.img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+
+/* LEYENDA */
+.caption {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: var(--bluePrimary);
+  font-weight: 500;
+}
+
+/* FLECHAS MÁS OSCURAS */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ÁREA DE CLICK */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 6%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .img-wrapper img {
+    height: 180px;
+  }
+}
+
+.card-title {
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+  .btn-vg {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-admision {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nosotros-col-1 img {
+    max-width: 75%;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .subtitle {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+  }
+
+  h1.display-3 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .aprendemos div img {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .aprendemos h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .row {
+    text-align: center;
+  }
+
+  .incribite-col-1,
+  .incribite-col-2,
+  .incribite-col-3 {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
+
+/* Logo del header SOLO mobile */
+.hero-logo-mobile {
+  display: none;
+  width: 120px;
+  margin: 0 auto 1rem;
+}
+
+/* Se activa solo en mobile */
+@media (max-width: 768px) {
+  .hero-logo-mobile {
+    display: block;
+  }
+}
+
+/* ===============================
+   HERO MOBILE – AJUSTES FINOS
+================================ */
+
+/* Compensa navbar fixed */
+
+
+/* Ajustes solo mobile */
+@media (max-width: 576px) {
+
+  /* Quita espacio extra arriba */
+  .home-col-1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /* LOGO grande y responsive */
+  .hero-logo-mobile {
+    display: block;
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto 3rem;
+  }
+
+  /* OCULTA textos duplicados */
+  .home-col-1 h1,
+  .home-col-1 h2 {
+    display: none;
+  }
+
+  /* Reduce márgenes de texto */
+  .home-col-1 div {
+    margin: 1.5rem auto;
+    font-size: 1.1rem;
+  }
+
+  #home {
+  padding-top: 0px;
+}
+}
+
