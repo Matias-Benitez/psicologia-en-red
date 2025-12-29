@@ -66,6 +66,10 @@ html, body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave opcional */
 }
 
+.conectados {
+    color: var(--red400);
+}
+
 
 body {
   padding-top: 15px !important;
